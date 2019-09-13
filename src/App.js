@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Route path="/" exact component={Home} />
+        <Route path="/:page" exact component={Home} />
         <Route path="/spaceship/:post_id" component={Spaceship} />
       </BrowserRouter>
     </div>
