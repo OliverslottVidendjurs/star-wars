@@ -22,7 +22,7 @@ class Home extends React.Component {
     }
 
     updateList = (page) => {
-        let amountPerPage = 3;
+        let amountPerPage = 5; //Doesn't work with > 10 atm
         let begin = ((page - 1) * amountPerPage);
         let end = amountPerPage + ((page - 1) * amountPerPage);
         var apiPage = Math.floor(begin / 10 + 1);
